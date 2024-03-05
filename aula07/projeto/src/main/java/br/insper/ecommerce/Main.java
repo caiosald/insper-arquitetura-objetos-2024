@@ -8,7 +8,6 @@ import br.insper.ecommerce.produto.Produto;
 import br.insper.ecommerce.produto.ProdutoService;
 import br.insper.ecommerce.pagamento.Pix;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -42,7 +41,6 @@ public class Main {
                     String nome = scanner.nextLine();
                     System.out.println("Digite o CPF do cliente:");
                     String cpf = scanner.nextLine();
-                    // Simplicidade: não estamos coletando a data de nascimento para este exemplo
                     clienteService.cadastrarCliente(nome, cpf);
                 }
                 case "2" -> clienteService.listarClientes();
@@ -55,7 +53,7 @@ public class Main {
                     System.out.println("Digite o nome do produto:");
                     String nome = scanner.nextLine();
                     System.out.println("Digite o preço do produto:");
-                    Double preco = Double.parseDouble(scanner.nextLine()); // Ajuste para lidar com a entrada de números
+                    Double preco = Double.parseDouble(scanner.nextLine());
                     produtoService.cadastrarProduto(nome, preco);
                 }
                 case "5" -> produtoService.listarProdutos();

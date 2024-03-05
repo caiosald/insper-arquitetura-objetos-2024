@@ -4,12 +4,10 @@ import br.insper.ecommerce.pagamento.MeioPagamento;
 
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class CompraService {
 
     private ArrayList<Compra> compras = new ArrayList<>();
-    private Scanner scanner = new Scanner(System.in);
 
     // 7 - Cadastrar Compra
     public void cadastrarCompra(Cliente cliente, ArrayList<Item> itens, MeioPagamento meioPagamento) {
