@@ -68,4 +68,8 @@ public class Compra {
         this.meioPagamento = meioPagamento;
     }
 
+    public ArrayList<Item> getItens() {
+        return itens;
+    }
+
 }

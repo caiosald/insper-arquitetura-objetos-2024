@@ -41,4 +41,8 @@ public class ClienteService {
         }
     }
 
+    public ArrayList<Cliente> getClientes() {
+        return this.clientes;
+    }
+
 }
